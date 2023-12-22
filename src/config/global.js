@@ -1,9 +1,11 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
+    componenteFormativo:
+      'Estrategia de aprendizaje Resultados de la aplicación de la metodología marco lógico - MML',
+    descripcionCurso:
+      'La Metodología de Marco Lógico (MML) es una herramienta para la ordenación de proyectos. El proceso incluye el análisis de intereses, el árbol de problemas, las alternativas de solución, el árbol de objetivos y se destaca la matriz de planificación. La MML se estructura con un resumen narrativo, indicadores, medios de verificación, análisis de riesgos y supuestos.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
-    fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
+    fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.svg'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
@@ -12,6 +14,10 @@ export default {
       {
         clases: ['banner-principal-decorativo-2'],
         imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.svg'),
       },
     ],
   },
@@ -23,65 +29,55 @@ export default {
         titulo: 'Volver al inicio',
       },
       {
-        nombreRuta: 'introduccion',
-        icono: 'fas fa-info-circle',
-        titulo: 'Introducción',
-        desarrolloContenidos: true,
-      },
-      {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Presentación',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Definición',
             hash: 't_1_1',
           },
+          {
+            numero: '1.2',
+            titulo: 'Elementos que componen el enfoque de marco lógico',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Pasos para elaborar la MML',
+            hash: 't_1_3',
+          },
+          {
+            numero: '1.4',
+            titulo: 'Recomendaciones para desarrollar la MML',
+            hash: 't_1_4',
+          },
+          {
+            numero: '1.5',
+            titulo:
+              'Herramientas digitales se pueden utilizar para la elaboración de la MML',
+            hash: 't_1_5',
+          },
+          {
+            numero: '1.6',
+            titulo: 'Ejemplo de la MML',
+            hash: 't_1_6',
+          },
         ],
-      },
-
-      {
-        nombreRuta: 'tema2',
-        numero: '2',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema3',
-        numero: '3',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
       },
     ],
     subMenu: [
       {
-        icono: 'fas fa-sitemap',
-        titulo: 'Síntesis',
-        nombreRuta: 'sintesis',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'actividad',
-        icono: 'far fa-question-circle',
-        titulo: 'Actividad didáctica',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'glosario',
-        icono: 'fas fa-sort-alpha-down',
-        titulo: 'Glosario',
-      },
-      {
-        nombreRuta: 'complementario',
-        icono: 'far fa-folder-open',
-        titulo: 'Material complementario',
-      },
-      {
         icono: 'fas fa-book',
         titulo: 'Referencias bibliográficas',
         nombreRuta: 'referencias',
+      },
+      {
+        icono: 'fas fa-download',
+        titulo: 'Descargar PDF',
+        download: 'downloads/material.zip',
       },
       {
         icono: 'fas fa-download',
@@ -121,8 +117,24 @@ export default {
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Medina, C. (2009). Diseño de proyectos de inversión con el enfoque de marco lógico. ICCA.',
+      link: 'http://repiica.iica.int/docs/B1539e/B1539e.pdf',
+    },
+    {
+      referencia: 'Organización Legalidad por México. Matriz de Marco Lógico.',
+      link: 'https://legalidadpormexico.org/mcl/modulo1/matrizdeml.html',
+    },
+    {
+      referencia:
+        'Organización de las Naciones Unidas para la Alimentación y la Agricultura. (2017) Guía para la formulación de proyectos de inversión del sector agropecuario bajo el enfoque de planificación estratégica y gestión por resultados.',
+      link: 'http://www.fao.org/3/i8097es/I8097ES.pdf',
+    },
+    {
+      referencia:
+        'Ortegón, E. Pacheco, J., Prieto, A. (2015). Metodología del marco lógico para la planificación, el seguimiento y la evaluación de proyectos y programas. Cepal.',
+      link:
+        'https://repositorio.cepal.org/bitstream/handle/11362/5607/S057518_es.pdf',
     },
   ],
   creditos: [
@@ -131,13 +143,13 @@ export default {
       autores: [
         {
           nombre: 'Claudia Patricia Aristizabal',
-          cargo: 'Responsable del equipo',
+          cargo: 'Responsable del Equipo',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Nombre completo',
+          nombre: 'Norma Constanza Morales Cruz',
           cargo: 'Responsable de línea de producción',
-          centro: 'Nombre centro de formación',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
         },
       ],
     },
@@ -145,9 +157,14 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
-          centro: 'Nombre centro de formación',
+          nombre: 'Juan Gilberto Giraldo Cortes',
+          cargo: 'Diseñador Instruccional',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
+        },
+        {
+          nombre: 'Maria Inés Machado López',
+          cargo: 'Asesor Metodológico',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
         },
       ],
     },
@@ -155,19 +172,14 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
+          nombre: 'José Jaime Luis Tang Pinzón',
           cargo: 'Diseñador web',
-          centro: 'Nombre centro de formación',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Francisco José Vásquez Suárez',
           cargo: 'Desarrollador Fullstack',
-          centro: 'Nombre centro de formación',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Animador y Producción audiovisual',
-          centro: 'Nombre centro de formación',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
         },
       ],
     },
@@ -175,14 +187,9 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Nombre validador',
+          nombre: 'Jorge Bustos Gómez',
           cargo: 'Validación y vinculación en plataforma LMS',
-          centro: 'Nombre centro formación',
-        },
-        {
-          nombre: 'Nombre validador',
-          cargo: 'Validación de contenidos accesibles',
-          centro: 'Nombre centro formación',
+          centro: 'Regional Tolima - Centro de Comercio y Servicios',
         },
       ],
     },

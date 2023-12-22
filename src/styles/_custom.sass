@@ -2,14 +2,18 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 15%
+    right: 75%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 22%
+    right: 26%
+  &-3
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 82%
+    right: 70%
 
 @keyframes float1
   0%
@@ -17,3 +21,38 @@
 
   100%
     transform: translateY(0px)
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: #12263F
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: #12263F
+
+.boton *, .boton--sm *
+  color: #fff !important
+
+@media (min-width: 992px)
+  .desktop 
+    display: inline
+  .movil 
+    display: none
+@media (max-width: 991px)
+  .movil 
+    display: inline
+  .desktop 
+    display: none
+
+.tema1
+  .bloque-texto-b.color-secundario:before
+    background-color: #CDF5E2
+
+  .tabla-a th
+    background-color: #CDF5E2
+
+  .lista-ol--cuadro__vineta span
+    color: #000 !important
+    font-weight: bold
+
+  .tarjeta-avatar-b
+    min-width: 40%
+    min-height: 40%
