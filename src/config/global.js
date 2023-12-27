@@ -77,7 +77,7 @@ export default {
       {
         icono: 'fas fa-download',
         titulo: 'Descargar PDF',
-        download: 'downloads/material.zip',
+        download: 'downloads/Resultado_de_la_aplicacion.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -118,12 +118,8 @@ export default {
   referencias: [
     {
       referencia:
-        'Medina, C. (2009). Diseño de proyectos de inversión con el enfoque de marco lógico. ICCA.',
-      link: 'http://repiica.iica.int/docs/B1539e/B1539e.pdf',
-    },
-    {
-      referencia: 'Organización Legalidad por México. Matriz de Marco Lógico.',
-      link: 'https://legalidadpormexico.org/mcl/modulo1/matrizdeml.html',
+        ' Méndez, R. (2020). Formulación y evaluación de proyectos: enfoque para emprendedores. Ecoe Ediciones.',
+      link: 'https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=10255',
     },
     {
       referencia:

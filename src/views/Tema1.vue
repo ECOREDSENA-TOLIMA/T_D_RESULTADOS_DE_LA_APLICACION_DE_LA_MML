@@ -286,7 +286,7 @@
     Separador 
     
     #t_1_5.titulo-segundo.color-acento-contenido(data-aos="fade-right")
-      h2 1.5 Herramientas digitales se pueden utilizar para la elaboración de la MML
+      h2 1.5 Herramientas digitales que se pueden utilizar para la elaboración de la MML
 
     .row.mt-5.mb-4.align-items-stretch(data-aos="fade-right")
       .col-lg-6.col-md-12
@@ -295,7 +295,7 @@
             img(src='@/assets/curso/temas/tema1/img-16.svg' alt='AvatarTop')
           .tarjeta.tarjeta--azul(style="background-color:#CDF5E2")
             .p-5
-              p <strong>Paquetes ofimáticos de Microsoft, OpenOffice o de Macros.</strong>
+              p <strong>Paquetes ofimáticos de <em>Microsoft, OpenOffice</em> o de Macros.</strong>
 
       .col-lg-6.col-md-12
         .tarjeta-avatar-b.mb-5
